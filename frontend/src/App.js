@@ -1,6 +1,7 @@
 import "./index.css";
 import DropdownMobile from "./components/DropdownMobile";
 import HeroSection from "./components/HeroSection";
+import NavbarLateral from "./components/NavbarLateral";
 
 function App() {
   return (
@@ -74,7 +75,9 @@ function App() {
 
         <div id="app-desktop">
           <div className="grid-desktop m-height-full">
-            <div className="grid-span-1-2">1</div>
+            <div className="grid-span-1-2">
+              <NavbarLateral />
+            </div>
             <div className="grid-span-2-3 border-lateral">
               <HeroSection />
             </div>

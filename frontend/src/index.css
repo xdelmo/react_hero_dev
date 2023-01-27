@@ -204,6 +204,58 @@ aside > a {
   overflow-x: hidden;
 }
 
+/* NAVBAR LATERAL */
+.h-full {
+  height: 100%;
+}
+.navbar-lateral {
+  position: relative;
+  display: flex;
+  justify-content: end;
+
+  flex: 1 1 auto;
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.navbar-lateral_section:nth-child(1) {
+  right: -2rem;
+  z-index: 1;
+}
+.navbar-lateral_section:nth-child(2) {
+  right: -1rem;
+  z-index: 2;
+}
+.navbar-lateral_section:nth-child(3) {
+  z-index: 3;
+  border-right: none;
+}
+
+.navbar-lateral_section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clr-accent);
+  width: 35px;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  background-color: var(--clr-primary);
+}
+
+.navbar-link {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-link:hover {
+  width: 70px;
+  padding-right: 10px;
+}
+
+.vertical-navbar-text {
+  transform: rotate(-90deg);
+}
+
 /* ---------------------- */
 /* Media queries          */
 /* ---------------------- */
