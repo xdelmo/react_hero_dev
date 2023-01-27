@@ -110,6 +110,7 @@ a {
 .grid-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--clr-accent);
 }
 
 .grid-desktop {
@@ -265,9 +266,9 @@ aside > a {
 /* ---------------------- */
 
 @media (min-width: 768px) {
-  #react_hero {
+  /* #react_hero {
     border-top: 1px solid var(--clr-accent);
-  }
+  } */
 
   #app-mobile {
     display: none;
