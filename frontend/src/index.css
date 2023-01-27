@@ -208,11 +208,11 @@ aside > a {
 .h-full {
   height: 100%;
 }
+
 .navbar-lateral {
   position: relative;
   display: flex;
   justify-content: end;
-
   flex: 1 1 auto;
   height: 100%;
   font-size: 1.25rem;
@@ -254,6 +254,10 @@ aside > a {
 
 .vertical-navbar-text {
   transform: rotate(-90deg);
+}
+
+.vertical-navbar-text > span {
+  font-size: 20px;
 }
 
 /* ---------------------- */
