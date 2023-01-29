@@ -172,6 +172,10 @@ a {
   grid-template-columns: 278px 1fr 278px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* ---------------------- */
 /* Custom Classes         */
 /* ---------------------- */
@@ -332,6 +336,27 @@ aside > a {
 .hero-grid_section_name > a > svg {
   margin-left: 20px;
   width: 30px;
+}
+
+.svg-section:hover > .hero-grid_section_name > a > svg {
+  width: 60px;
+}
+
+/* animazione freccia desktop view */
+.right-arrow {
+  animation: aniRightArrow 1s ease-in-out infinite;
+}
+
+@keyframes aniRightArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 /* .image-hero:hover::before {

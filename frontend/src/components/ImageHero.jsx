@@ -1,8 +1,8 @@
 import React from "react";
 
-function ImageHero() {
+function ImageHero({ imgID }) {
   return (
-    <div id="primo" className="image-hero img-padding">
+    <div id={imgID} className="image-hero img-padding">
       <img
         src="https://source.unsplash.com/random/?jewelry"
         alt="jewelry"
