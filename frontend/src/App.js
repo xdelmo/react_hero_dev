@@ -21,7 +21,7 @@ function App() {
           </figure>
 
           {/* <---! BARRA NAVIGAZIONE ---> */}
-          <div className=" flex-center mx-5 mb-7">
+          <div className="flex-center mx-5 mb-7">
             {/* freccia sinistra */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ function App() {
         {/* DESKTOP VIEW */}
 
         <div id="app-desktop">
-          <div className="grid-desktop m-height-full">
+          <div className="grid-desktop">
             <div className="grid-span-1-2">
               <NavbarLateral />
             </div>

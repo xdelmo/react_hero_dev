@@ -2,7 +2,7 @@ import React from "react";
 
 function ImageHero() {
   return (
-    <div className="img-padding">
+    <div id="primo" className="image-hero img-padding">
       <img
         src="https://source.unsplash.com/random/?jewelry"
         alt="jewelry"

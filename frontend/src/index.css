@@ -184,7 +184,7 @@ a {
 }
 
 .img-padding {
-  padding: 31px;
+  padding: 31px 31px 0 31px;
 }
 
 #app-tablet {
@@ -270,8 +270,74 @@ aside > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
 }
+
+.svg-section {
+  margin: 40px 0;
+  flex-direction: column;
+  position: relative;
+}
+
+/* svg animazioni desktop e tablet */
+
+.svg-section > svg {
+  transition: all 0.5s ease-in-out;
+}
+.svg-section:hover > svg {
+  transform: translateY(-150px);
+}
+
+.svg-section > svg > path {
+  transition: all 0.5s ease-in-out;
+}
+.svg-section:hover > svg > path {
+  fill: var(--clr-primary);
+}
+
+.image-hero {
+  position: relative;
+}
+
+:root {
+  --opacity: 0;
+  --background: none;
+}
+
+.image-hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: var(--opacity);
+  background: var(--background);
+  margin: 31px;
+  border-radius: 100vmax;
+  aspect-ratio: 9/14.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-grid_section_name {
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  display: none;
+  /* right: 200%; */
+  transition: all 0.5 ease-in-out;
+}
+
+.hero-grid_section_name > a > svg {
+  margin-left: 20px;
+  width: 30px;
+}
+
+/* .image-hero:hover::before {
+  opacity: 0.61;
+  background: var(--clr-accent);
+} */
 
 /* ---------------------- */
 /* Media queries          */
