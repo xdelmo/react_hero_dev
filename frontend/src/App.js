@@ -18,7 +18,7 @@ function App() {
     // setta la setWindowWidth ad ogni ascolto del resize
     window.addEventListener("resize", handleWindowResize);
     // if che setta isDesktop per l'operatore ternario e il render del DOM tablet o desktop
-    if (windowWidth > 1366) {
+    if (windowWidth >= 1366) {
       setIsDesktop(true);
     } else {
       setIsDesktop(false);
