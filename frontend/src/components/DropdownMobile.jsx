@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import ChevronDown from "./svg/ChevronDown";
 
 function DropdownMobile() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -10,41 +11,30 @@ function DropdownMobile() {
 
   return (
     <div id="dropdown-mobile">
-      <div className="flex-center font-secondary font-bold  text-sm grid-span-1 border-b-[1px] border-solid border-accent gap-5 uppercase ">
-        <a href="" className="py-2">
+      <div className="flex-center border-bottom">
+        <a href="" className="uppercase bold dropdown-mobile_link">
           Donna
         </a>
-        <button onClick={handleDropdownClick} className="flex-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-3"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
-        </button>
+        {/* <button onClick={handleDropdownClick} className="button-dropdown"> */}
+        <div onClick={handleDropdownClick} className="button-dropdown">
+          <ChevronDown />
+        </div>
+        {/* </button> */}
       </div>
 
       {isDropdownOpen && (
-        <div>
-          <div className="flex-center bg-main font-secondary font-bold text-sm grid-span-1 border-b-[1px] border-solid border-accent gap-5 uppercase ">
-            <a href="" className="py-2">
+        <>
+          <div className="flex-center uppercase border-bottom">
+            <a href="" className="py-2 dropdown-mobile_link">
               Uomo
             </a>
           </div>
-          <div className="flex-center  font-secondary font-bold text-sm grid-span-1 border-b-[1px] border-solid border-accent gap-5 uppercase ">
-            <a href="" className="py-2">
+          <div className="flex-center uppercase border-bottom">
+            <a href="" className="py-2 dropdown-mobile_link">
               Bambino
             </a>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

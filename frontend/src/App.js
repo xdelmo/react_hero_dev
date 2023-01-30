@@ -95,6 +95,7 @@ function App() {
         {/* operatore ternario per togliere dal DOM elementi con lo stesso ID per far continuare a funzionare le animazioni*/}
         {!isDesktop ? (
           <div id="app-tablet">
+            <DropdownMobile />
             <HeroSection />
           </div>
         ) : (

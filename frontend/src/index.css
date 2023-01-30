@@ -90,12 +90,6 @@ a {
   justify-content: center;
 }
 
-#dropdown-mobile {
-  background-color: var(--clr-primary);
-  border-bottom: 1px solid var(--clr-accent);
-  margin: 20px;
-}
-
 .transform-vertical {
   transform: rotate(-90deg);
   font-stretch: condensed;
@@ -110,7 +104,7 @@ a {
 .grid-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--clr-accent);
+  /* border-top: 1px solid var(--clr-accent); */
 }
 
 .grid-desktop {
@@ -157,6 +151,13 @@ a {
 
 .border-left {
   border-left: 1px solid var(--clr-accent);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--clr-accent);
+}
+
+.border-top {
+  border-top: 1px solid var(--clr-accent);
 }
 
 .m-height-full {
@@ -266,6 +267,29 @@ aside > a {
 .vertical-navbar-text > span {
   font-family: var(--ff-secondary);
   font-size: 20px;
+}
+
+/* DROPDOWN MOBILE */
+
+#dropdown-mobile {
+  background-color: var(--clr-primary);
+  /* border-bottom: 1px solid var(--clr-accent); */
+  /* margin: 20px; */
+  font-family: var(--ff-secondary);
+}
+
+#dropdown-mobile > div {
+  gap: 20px;
+  padding: 7px 0;
+}
+
+.button-dropdown {
+  cursor: pointer;
+}
+
+.dropdown-mobile_link {
+  font-family: var(--ff-secondary);
+  font-weight: bold;
 }
 
 /* HERO */
@@ -404,6 +428,9 @@ aside > a {
     display: none;
   }
 
+  .grid-main {
+    border-top: 1px solid var(--clr-accent);
+  }
   /* calcolo altezza hero meno navbar e footer */
   /* #react_hero {
     min-height: calc(100vh - 188px - 85px);
