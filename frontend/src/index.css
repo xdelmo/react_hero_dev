@@ -93,7 +93,7 @@ a {
 .transform-vertical {
   transform: rotate(-90deg);
   font-stretch: condensed;
-  margin-right: -100%;
+  margin-right: -85%;
   transition: margin-right 0.75s ease-in-out;
 }
 
@@ -203,7 +203,7 @@ a {
 /* OCCASIONI */
 
 aside > a {
-  font-size: 9rem;
+  font-size: 8rem;
   color: var(--clr-accent);
 }
 
@@ -435,4 +435,11 @@ aside > a {
   /* #react_hero {
     min-height: calc(100vh - 188px - 85px);
   } */
+}
+
+@media (min-width: 1920px) {
+  aside > a {
+    font-size: 9rem;
+    color: var(--clr-accent);
+  }
 }
