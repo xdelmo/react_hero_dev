@@ -15,9 +15,9 @@ function ChevronDown() {
         transform="translate(-6.793 -17.293)"
         fill="none"
         stroke="#242d1b"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
       />
     </svg>
   );

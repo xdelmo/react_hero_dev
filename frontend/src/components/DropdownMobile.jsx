@@ -7,6 +7,8 @@ function DropdownMobile() {
 
   const handleDropdownClick = () => {
     setIsDropdownOpen((prevState) => !prevState);
+    const buttonDropdown = document.getElementById("button-dropdown");
+    buttonDropdown.classList.toggle("rotate-180");
   };
 
   return (
@@ -16,7 +18,11 @@ function DropdownMobile() {
           Donna
         </a>
         {/* <button onClick={handleDropdownClick} className="button-dropdown"> */}
-        <div onClick={handleDropdownClick} className="button-dropdown">
+        <div
+          id="button-dropdown"
+          onClick={handleDropdownClick}
+          className="button-dropdown"
+        >
           <ChevronDown />
         </div>
         {/* </button> */}

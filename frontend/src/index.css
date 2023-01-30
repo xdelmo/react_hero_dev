@@ -177,6 +177,10 @@ a {
   text-align: center;
 }
 
+.flip {
+  transform: scaleX(-1);
+}
+
 /* ---------------------- */
 /* Custom Classes         */
 /* ---------------------- */
@@ -285,6 +289,11 @@ aside > a {
 
 .button-dropdown {
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }
 
 .dropdown-mobile_link {
@@ -390,6 +399,44 @@ aside > a {
   opacity: 0.61;
   background: var(--clr-accent);
 } */
+
+/* Carosello */
+
+/* .lottie-mobile {
+  width: 40px;
+} */
+
+.svg-mobile {
+  cursor: pointer;
+}
+
+#carousel {
+  margin: 30px 0;
+}
+
+#navbar-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.carousel_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: grab;
+
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+  margin: 30px 0;
+}
+
+.carousel_img {
+  margin: 0 20px;
+}
 
 /* ---------------------- */
 /* Media queries          */
