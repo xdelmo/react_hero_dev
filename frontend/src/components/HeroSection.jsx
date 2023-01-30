@@ -13,7 +13,7 @@ function HeroSection() {
     heroSection.style.setProperty("--background", "var(--clr-accent)");
 
     const sectionName = document.getElementById(linkID);
-    sectionName.style.setProperty("display", "block");
+    sectionName.style.setProperty("--opacity-svg", "1");
     // sectionName.style.setProperty("right", "0");
   }
 
@@ -24,7 +24,7 @@ function HeroSection() {
     heroSection.style.setProperty("--background", "none");
 
     const sectionName = document.getElementById(linkID);
-    sectionName.style.setProperty("display", "none");
+    sectionName.style.setProperty("--opacity-svg", "0");
     // sectionName.style.setProperty("right", "200%");
   }
 
