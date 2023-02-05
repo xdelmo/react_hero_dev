@@ -374,9 +374,9 @@ aside > a {
   width: 30px;
 }
 
-.svg-section:hover > .hero-grid_section_name > a > svg {
+/* .svg-section:hover > .hero-grid_section_name > a > svg {
   width: 60px;
-}
+} */
 
 /* animazione freccia desktop view */
 .right-arrow {
