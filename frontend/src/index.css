@@ -445,12 +445,12 @@ aside > a {
   flex-wrap: nowrap;
 
   overflow-x: auto;
-  margin: 30px 0;
+  margin: 30px;
 }
 
-.carousel_img {
+/* .carousel_img {
   margin: 0 20px;
-}
+} */
 
 /* ---------------------- */
 /* Media queries          */
