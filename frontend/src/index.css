@@ -284,7 +284,21 @@ aside > a {
 
 #dropdown-mobile > div {
   gap: 20px;
-  padding: 7px 0;
+}
+#dropdown_items {
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.height-zero {
+  max-height: 0px;
+}
+
+.height-auto {
+  max-height: 300px;
+}
+.py-2 {
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
 
 .button-dropdown {
