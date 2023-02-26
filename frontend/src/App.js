@@ -1,5 +1,5 @@
 import "./index.css";
-import DropdownMobile from "./components/DropdownMobile";
+// import DropdownMobile from "./components/DropdownMobile";
 import HeroSection from "./components/HeroSection";
 import NavbarLateral from "./components/NavbarLateral";
 import React, { useState, useEffect } from "react";
@@ -34,7 +34,7 @@ function App() {
       <main>
         {/* MOBILE APP */}
         <div id="app-mobile">
-          <DropdownMobile />
+          {/* <DropdownMobile /> */}
           {/* CAROSELLO */}
           <Carousel />
         </div>
@@ -43,7 +43,7 @@ function App() {
         {/* operatore ternario per togliere dal DOM elementi con lo stesso ID per far continuare a funzionare le animazioni*/}
         {!isDesktop ? (
           <div id="app-tablet">
-            <DropdownMobile />
+            {/* <DropdownMobile /> */}
             <HeroSection />
           </div>
         ) : (
