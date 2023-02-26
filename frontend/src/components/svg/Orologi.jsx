@@ -2,12 +2,7 @@ import React from "react";
 
 function Orologi() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="60.403"
-      height="60.518"
-      viewBox="0 0 60.403 60.518"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.403 60.518">
       <path
         id="Tracciato_49"
         data-name="Tracciato 49"

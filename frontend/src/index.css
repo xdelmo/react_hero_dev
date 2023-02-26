@@ -332,6 +332,8 @@ aside > a {
 /* svg animazioni desktop e tablet */
 
 .svg-section > svg {
+  width: 60px;
+  height: 60px;
   transition: all 0.5s ease-in-out;
 }
 .svg-section:hover > svg {
@@ -416,23 +418,35 @@ aside > a {
 
 /* Carosello */
 
-/* .lottie-mobile {
+.lottie-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
-} */
+}
 
 .svg-mobile {
   cursor: pointer;
+  width: 30px;
+  height: 15px;
 }
 
 #carousel {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
-#navbar-mobile {
+#navbar-carousel {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
+}
+
+#button-prevslide,
+#button-nextslide {
+  border: none;
+  background-color: var(--clr-primary);
+  padding: 0;
 }
 
 .carousel_imgs {
@@ -445,7 +459,7 @@ aside > a {
   flex-wrap: nowrap;
 
   overflow-x: auto;
-  margin: 30px;
+  margin: 20px;
 }
 
 /* .carousel_img {

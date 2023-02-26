@@ -4,8 +4,6 @@ function RightArrow() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="14.147"
       viewBox="0 0 20 14.147"
       className="right-arrow"
     >

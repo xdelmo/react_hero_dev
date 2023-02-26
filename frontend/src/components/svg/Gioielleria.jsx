@@ -6,8 +6,6 @@ function Gioielleria() {
       id="Raggruppa_1"
       data-name="Raggruppa 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="55.437"
-      height="59.6"
       viewBox="0 0 55.437 59.6"
     >
       <path
