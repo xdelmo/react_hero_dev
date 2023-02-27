@@ -44,13 +44,14 @@ function Carousel() {
       <swiper-container
         slides-per-view="1"
         speed="500"
-        css-mode="true"
+        // css-mode="true"
         // allowSlidePrev="true"
         // allowSlideNext="true"
         // rewind="true"
         // scrollbar="true"
         // navigation="true"
         init="true"
+        longSwipes="false"
       >
         {/* <---! BARRA NAVIGAZIONE ---> */}
         <swiper-slide>
