@@ -50,6 +50,7 @@ function Carousel() {
         // rewind="true"
         // scrollbar="true"
         // navigation="true"
+        loop="true"
         init="true"
         longSwipes="false"
       >
